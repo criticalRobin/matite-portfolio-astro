@@ -1,11 +1,58 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
+import Title from "../components/Title.astro";
 ---
 
 <Layout title="MatiteDev">
   <header><Navbar /></header>
-  <main></main>
+  <main>
+    <section class="about">
+      <img src="matite_img.jpeg" alt="My image" />
+      <article>
+        <p>Hola!, soy Matías Tite</p>
+        <Title text="Desarrollador de Software de Pillaro" />
+      </article>
+    </section>
+    <section class="skills"></section>
+    <section class="work"></section>
+    <section class="contact"></section>
+  </main>
 </Layout>
 
-<style></style>
+<style>
+  main {
+    margin: 50px auto 0 auto;
+    max-width: 1020px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    height: calc(100vh - 50px);
+    text-align: center;
+    border-bottom: 1px solid rgb(30, 30, 30, 0.3);
+    padding: 0 20px;
+  }
+
+  .about > img {
+    width: 150px;
+    border-radius: 9999px;
+    object-fit: cover;
+  }
+
+  .about > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
