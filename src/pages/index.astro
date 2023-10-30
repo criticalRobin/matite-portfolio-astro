@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Title from "../components/Title.astro";
 import Button from "../components/Button.astro";
+import SkillCard from "../components/SkillCard.astro";
 ---
 
 <Layout title="MatiteDev">
@@ -16,7 +17,26 @@ import Button from "../components/Button.astro";
       </article>
       <Button message="Leer más" icon="external-link.svg" />
     </section>
-    <section class="skills"></section>
+    <section class="skills">
+      <Title text="Skills y Tecnologías" />
+      <section>
+        <SkillCard
+          title="Frontend"
+          description="Desarrollo de sitios web e interfaces de usuario con HTML, CSS, JavaScript y AstroJS"
+          icon="design.svg"
+        />
+        <SkillCard
+          title="Automatización"
+          description="Desarrollo de scripts en Python para la automatización de tareas"
+          icon="python.svg"
+        />
+        <SkillCard
+          title="Backend"
+          description="Desarrollo de apps web tipo monolito con Django y de APIs Rest con DRF"
+          icon="server.svg"
+        />
+      </section>
+    </section>
     <section class="work"></section>
     <section class="contact"></section>
   </main>
@@ -56,5 +76,22 @@ import Button from "../components/Button.astro";
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid rgb(30, 30, 30, 0.3);
+    padding: 0px 20px 100px 20px;
+  }
+
+  .skills > section {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 </style>
