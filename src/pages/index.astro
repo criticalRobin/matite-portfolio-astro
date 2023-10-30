@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar.astro";
 import Title from "../components/Title.astro";
 import Button from "../components/Button.astro";
 import SkillCard from "../components/SkillCard.astro";
+import ProjectCard from "../components/ProjectCard.astro";
 ---
 
 <Layout title="MatiteDev">
@@ -37,7 +38,26 @@ import SkillCard from "../components/SkillCard.astro";
         />
       </section>
     </section>
-    <section class="work"></section>
+    <section class="work">
+      <Title text="Mis Proyectos" />
+      <section>
+        <ProjectCard
+          title="Proyecto 1"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+          link="#"
+        />
+        <ProjectCard
+          title="Proyecto 2"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+          link="#"
+        />
+        <ProjectCard
+          title="Proyecto 3"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+          link="#"
+        />
+      </section>
+    </section>
     <section class="contact"></section>
   </main>
 </Layout>
@@ -89,6 +109,23 @@ import SkillCard from "../components/SkillCard.astro";
   }
 
   .skills > section {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid rgb(30, 30, 30, 0.3);
+    padding: 0px 20px 100px 20px;
+  }
+
+  .work > section {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
