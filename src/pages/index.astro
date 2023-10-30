@@ -5,6 +5,7 @@ import Title from "../components/Title.astro";
 import Button from "../components/Button.astro";
 import SkillCard from "../components/SkillCard.astro";
 import ProjectCard from "../components/ProjectCard.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="MatiteDev">
@@ -67,6 +68,7 @@ import ProjectCard from "../components/ProjectCard.astro";
       />
     </section>
   </main>
+  <Footer />
 </Layout>
 
 <style>
@@ -146,5 +148,19 @@ import ProjectCard from "../components/ProjectCard.astro";
     gap: 50px;
     width: 100%;
     padding: 0px 20px 100px 20px;
+  }
+
+  @media screen and (max-width: 700px) {
+    main {
+      margin: 0 auto;
+    }
+
+    .about {
+      height: 80vh;
+    }
+
+    .about > img {
+      width: 100px;
+    }
   }
 </style>
