@@ -16,7 +16,7 @@ import ProjectCard from "../components/ProjectCard.astro";
         <p>Hola!, soy Matías Tite</p>
         <Title text="Desarrollador de Software de Pillaro" />
       </article>
-      <Button message="Leer más" icon="external-link.svg" />
+      <Button message="Leer más" icon="external-link.svg" link="#" />
     </section>
     <section class="skills">
       <Title text="Skills y Tecnologías" />
@@ -58,7 +58,14 @@ import ProjectCard from "../components/ProjectCard.astro";
         />
       </section>
     </section>
-    <section class="contact"></section>
+    <section class="contact">
+      <Title text="Enviame un Mensaje!" />
+      <Button
+        message="Contacto"
+        icon="email.svg"
+        link="https://wa.me/+593993908744"
+      />
+    </section>
   </main>
 </Layout>
 
@@ -130,5 +137,14 @@ import ProjectCard from "../components/ProjectCard.astro";
     gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding: 0px 20px 100px 20px;
   }
 </style>
