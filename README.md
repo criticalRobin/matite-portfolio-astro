@@ -1,4 +1,9 @@
-# Astro Starter Kit: Basics
+# Mi Portafolio Personal
+
+![image](https://github.com/criticalRobin/matite-portfolio-astro/assets/133540422/cee95aad-dcc7-43c6-a19f-466d10936c9e)
+
+
+# Sigue esta guía para usar este proyecto <3
 
 ```sh
 npm create astro@latest -- --template basics
@@ -12,7 +17,7 @@ npm create astro@latest -- --template basics
 
 ![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-## 🚀 Project Structure
+## 🚀 Estructura del Proyecto
 
 Inside of your Astro project, you'll see the following folders and files:
 
@@ -36,7 +41,7 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
+## 🧞 No olvides utilizar estos comandos!!!
 
 All commands are run from the root of the project, from a terminal:
 
